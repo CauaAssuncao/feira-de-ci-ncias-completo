@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Páscoa.css">
+        <title>Páscoa</title>
+    </head>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Página Inicial</a>
+                    <a href="Páscoa.html">Páscoa</a>
+                    <a href="Cultural.html">Cultural</a>
+                    <a href="Talentos.html">Talentos</a>
+                    <a href="Interclasse.html">Interclasse</a>
+                    <a href="AgostoLilas.html">Agosto Lilas</a>
+                    <a href="Acolhimento.html">Acolhimento</a>
+                </div>
+                
+                    <div id="main" class="content">
+                        <button class="openbtn" onclick="openNav()">&#9776; </button>
+                    </div>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("mySidebar").style.left = "0";
+                      document.getElementById("main").classList.add('content-open');
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mySidebar").style.left = "-250px";
+                      document.getElementById("main").classList.remove('content-open');
+                    }
+                    </script>
+                </li>
+            </ul>
+        </nav> 
+    </div>
+    <body>
+
+        <section class="cover-image">
+            <img src="img/Capa Site (5).jpg" alt="Imagem de Capa">
+        </section>
+
+    <main>
+        <article class="article">
+            <h2>A Importância da Páscoa nas Escolas</h2>
+            <div class="image-container">
+                <img src="img/Pascoa_01.jpeg" alt="Descrição da Imagem">
+            </div>
+            <p>Recentemente, no Colégio Estadual Santo Agostinho em Palotina, PR, foi realizada uma palestra especial sobre a Páscoa, com foco nos significados e na conscientização desta data comemorativa. O evento teve como objetivo educar os alunos sobre as diversas tradições e valores associados à Páscoa, proporcionando um entendimento mais profundo da celebração.</p>
+            <p>A Páscoa é uma das datas mais importantes no calendário cristão, celebrando a ressurreição de Jesus Cristo. Além do aspecto religioso, a Páscoa também carrega significados de renovação, esperança e solidariedade. Durante a palestra, os alunos aprenderam sobre essas tradições e como elas são celebradas em diferentes culturas ao redor do mundo.</p>
+            <p>O evento destacou a importância da conscientização e do respeito pelas diversas formas de comemorar a Páscoa. Discussões foram feitas sobre como os símbolos pascais, como o coelho e os ovos de chocolate, representam a fertilidade e a renovação da vida. Os alunos foram incentivados a refletir sobre os valores de compaixão e fraternidade, essenciais nesta época do ano.</p>
+            <p>A mobilização dos alunos e professores para a conscientização foi um elemento chave do evento. Foi criado um ambiente colaborativo onde todos puderam participar ativamente das discussões e atividades, promovendo um senso de comunidade e união. Esta abordagem ajudou a fortalecer os laços entre os membros da escola e a promover um entendimento mais profundo e respeitoso da Páscoa.</p>
+            <p>Iniciativas como essa no Colégio Estadual Santo Agostinho são fundamentais para promover a educação integral, que abrange não apenas os conhecimentos acadêmicos, mas também os valores éticos e culturais. A celebração da Páscoa na escola proporcionou uma oportunidade única para os alunos se conectarem com suas tradições e refletirem sobre os significados mais profundos desta data.</p>
+        </article>
+        
+        
+
+        <section class="comments">
+            <h2>Comentários</h2>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <textarea id="comment" placeholder="Deixe seu comentário..."></textarea>
+            <button id="submit-comment">Enviar</button>
+            <div id="comment-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FEIRA DE CIÊNCIAS - CESA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

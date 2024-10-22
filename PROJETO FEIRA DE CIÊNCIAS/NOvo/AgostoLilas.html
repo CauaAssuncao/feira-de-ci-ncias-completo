@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="AgostoLilas.css">
+        <title>Agosto Lilas</title>
+    </head>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Página Inicial</a>
+                        <a href="Páscoa.html">Páscoa</a>
+                        <a href="Cultural.html">Cultural</a>
+                        <a href="Talentos.html">Talentos</a>
+                        <a href="Interclasse.html">Interclasse</a>
+                        <a href="AgostoLilas.html">Agosto Lilas</a>
+                        <a href="Acolhimento.html">Acolhimento</a>
+                    </div>
+                
+                    <div id="main" class="content">
+                        <button class="openbtn" onclick="openNav()">&#9776; </button>
+                    </div>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("mySidebar").style.left = "0";
+                      document.getElementById("main").classList.add('content-open');
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mySidebar").style.left = "-250px";
+                      document.getElementById("main").classList.remove('content-open');
+                    }
+                    </script>
+                </li>
+            </ul>
+        </nav> 
+    </div>
+    <body>
+
+        <section class="cover-image">
+            <img src="img/Capa Site.jpg" alt="Imagem de Capa">
+        </section>
+
+    <main>
+        <article class="article">
+            <h2>Palestra sobre Violência contra Mulheres</h2>
+            <div class="image-container">
+                <img src="img/Agostolilas_00.jpeg" alt="Descrição da Imagem">
+            </div>
+            <p>A palestra ocorreu no Colégio Estadual Santo Agostinho em Palotina, PR, e foi conduzida por uma profissional que atende grupos de mulheres que sofreram com a violência do Agosto Lilás. Este evento teve como objetivo conscientizar a comunidade sobre a importância de reconhecer e combater a violência contra as mulheres, além de oferecer suporte e recursos para aquelas que passaram por situações difíceis.</p>
+            <p>Através de relatos e experiências, as participantes puderam compartilhar suas histórias, aprendendo sobre os serviços disponíveis e as formas de empoderamento. A profissional enfatizou a importância do acolhimento e da união entre as mulheres para enfrentar e superar essas adversidades.</p>
+            <p>Esse tipo de evento é crucial para fomentar a discussão sobre temas tão relevantes, e é um passo importante para a construção de uma sociedade mais justa e igualitária.</p>
+            <p>As palestras sobre o Agosto Lilás nas escolas são de suma importância para promover a conscientização desde cedo. Agosto Lilás é uma campanha de combate à violência contra a mulher, criada em alusão à Lei Maria da Penha, sancionada em 7 de agosto de 2006. Essa lei é um marco legal que visa coibir e prevenir a violência doméstica e familiar contra a mulher, fortalecendo seus direitos e proporcionando mecanismos de proteção.</p>
+            <p>Nas escolas, abordar essa temática é fundamental para educar as novas gerações sobre respeito, igualdade e os direitos das mulheres, criando um ambiente de apoio e entendimento. Essas ações formam uma base sólida para que futuros cidadãos possam reconhecer e combater a violência, promovendo uma sociedade mais segura e equitativa.</p>
+            <p>Além disso, envolver jovens nessas discussões é uma forma de prevenir futuros casos de violência, educando-os sobre os sinais de abuso e as formas de buscar ajuda. As palestras proporcionam um espaço seguro para que eles façam perguntas, compartilhem preocupações e desenvolvam uma compreensão profunda sobre o assunto.</p>
+            <p>As campanhas como o Agosto Lilás também ajudam a desmistificar muitas das ideias errôneas e preconceitos que ainda existem sobre a violência contra a mulher. Informar e educar é a chave para a mudança de comportamento e para a construção de um ambiente onde as mulheres se sintam respeitadas e protegidas.</p>
+            <p>Por fim, eventos educacionais sobre o Agosto Lilás podem inspirar outras instituições a promover ações semelhantes, criando uma rede de apoio e conscientização que se espalha pela comunidade. Essa união de esforços é essencial para que possamos avançar em direção a um mundo onde a violência contra a mulher seja coisa do passado.</p>
+        </article>
+        
+        
+
+        <section class="comments">
+            <h2>Comentários</h2>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <textarea id="comment" placeholder="Deixe seu comentário..."></textarea>
+            <button id="submit-comment">Enviar</button>
+            <div id="comment-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FEIRA DE CIÊNCIAS - CESA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

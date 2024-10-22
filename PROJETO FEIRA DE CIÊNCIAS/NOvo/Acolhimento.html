@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Acolhimento.css">
+        <title>Acolhimento</title>
+    </head>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Página Inicial</a>
+                        <a href="Páscoa.html">Páscoa</a>
+                        <a href="Cultural.html">Cultural</a>
+                        <a href="Talentos.html">Talentos</a>
+                        <a href="Interclasse.html">Interclasse</a>
+                        <a href="AgostoLilas.html">Agosto Lilas</a>
+                        <a href="Acolhimento.html">Acolhimento</a>
+                    </div>
+                
+                    <div id="main" class="content">
+                        <button class="openbtn" onclick="openNav()">&#9776; </button>
+                    </div>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("mySidebar").style.left = "0";
+                      document.getElementById("main").classList.add('content-open');
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mySidebar").style.left = "-250px";
+                      document.getElementById("main").classList.remove('content-open');
+                    }
+                    </script>
+                </li>
+            </ul>
+        </nav> 
+    </div>
+    <body>
+
+        <section class="cover-image">
+            <img src="img/Capa Site (2).jpg" alt="Imagem de Capa">
+        </section>
+
+    <main>
+        <article class="article">
+            <h2>A Importância do Acolhimento nas Escolas</h2>
+            <div class="image-container">
+                <img src="img/Acolhimento_01.jpeg" alt="Descrição da Imagem">
+            </div>
+            <p>Recentemente, no Colégio Estadual Santo Agostinho em Palotina, PR, ocorreu uma dinâmica emocionante onde os adultos abraçavam as crianças que chegavam à escola. Essa ação simples, mas poderosa, visava criar um ambiente acolhedor e de apoio para os estudantes, promovendo um senso de segurança e pertencimento logo ao início do dia escolar.</p>
+            <p>Em tempos onde o isolamento social e as interações virtuais predominam, iniciativas como essa se tornam ainda mais relevantes. O ato de abraçar vai além do gesto físico; é um sinal de que cada criança é valorizada e aceita, contribuindo para sua autoestima e bem-estar emocional. Estudos mostram que o acolhimento afetuoso pode reduzir níveis de estresse e ansiedade, facilitando um ambiente mais propício para a aprendizagem e desenvolvimento pessoal.</p>
+            <p>Além disso, no contexto atual, onde tendências antisociais como o bullying e a violência nas escolas têm se tornado preocupações crescentes, criar uma cultura de acolhimento é fundamental. Dinâmicas de abraços e gestos de carinho e apoio podem ser ferramentas poderosas para combater essas tendências, promovendo a empatia e fortalecendo os laços entre alunos e professores.</p>
+            <p>O impacto dessa dinâmica é profundo, ajudando a construir uma comunidade escolar mais unida e resiliente. Crianças que se sentem aceitas e queridas são mais propensas a desenvolver habilidades sociais positivas e a contribuir para um ambiente de respeito e cooperação. Eventos como este no Colégio Estadual Santo Agostinho são um exemplo brilhante de como pequenas ações podem gerar grandes mudanças na vida escolar.</p>
+        </article>
+        
+        
+
+        <section class="comments">
+            <h2>Comentários</h2>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <textarea id="comment" placeholder="Deixe seu comentário..."></textarea>
+            <button id="submit-comment">Enviar</button>
+            <div id="comment-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FEIRA DE CIÊNCIAS - CESA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

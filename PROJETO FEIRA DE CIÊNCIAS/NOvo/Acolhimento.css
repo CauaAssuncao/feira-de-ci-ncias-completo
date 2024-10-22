@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000000;
+    font-size: 25px; /* Tamanho base da fonte */
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px; /* Aumenta o tamanho do título */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px; /* Aumenta o tamanho do texto dos links */
+}
+
+main {
+    padding: 20px;
+}
+
+.article {
+    background: #fff; /* Fundo branco para o artigo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Para corrigir problemas de flutuação */
+}
+
+.article h2 {
+    text-align: center; /* Centraliza o título do artigo */
+}
+
+.image-container {
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    max-width: 550px; /* Tamanho máximo da imagem */
+}
+
+.image-container img {
+    width: 100%; /* Ajusta a imagem para 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+
+
+
+.caption {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-decoration: underline;
+    clear: both; /* Garante que a legenda fique abaixo da imagem */
+}
+
+.comments {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+#name, #comment {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px; /* Aumenta o tamanho da fonte dos campos de texto */
+}
+
+#submit-comment {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px; /* Aumenta o tamanho da fonte do botão */
+}
+
+#submit-comment:hover {
+    background-color: #0056b3;
+}
+
+#comment-list {
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background: #fff;
+    font-size: 20px; /* Aumenta o tamanho da fonte da lista de comentários */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #ccc;
+    background: #000000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline; /* Exibir os itens em linha */
+    margin-right: 40px; /* Espaçamento entre os botões */
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 10px 20px; /* Espaçamento interno para criar o efeito de botão */
+    background-color: #ffffff; /* Cor de fundo inicial */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s; /* Transição suave ao mudar a cor */
+}
+
+.menu a:hover {
+    background-color: #5c6569; /* Cor de fundo ao passar o mouse */
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: fixed; 
+    right: 30; 
+}
+
+.sidebar {
+    width: 250px; 
+    position: fixed;
+    left: -5000px;
+    top: 0;
+    height: 100%; 
+    background-color: black; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #111;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.content {
+    margin-left: 0;
+    transition: margin-left 0.5s;
+    padding: 20px;
+    text-align: left;
+    size: 50px;
+}
+
+.content-open {
+    margin-left: 250px;
+}
+
+.openbtn {
+    font-size: 30px; 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #ddd;
+    text-align: center;
+}
+
+.cover-image {
+    margin: 0; /* Remove margens para evitar espaço desnecessário */
+}
+
+.cover-image img {
+    width: 100%; /* Ajusta a largura da imagem para 100% */
+    height: auto; /* Mantém a proporção da imagem */
+}

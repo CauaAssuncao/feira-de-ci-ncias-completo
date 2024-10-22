@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Cultura.css">
+        <title>Cultural</title>
+    </head>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Página Inicial</a>
+                        <a href="Páscoa.html">Páscoa</a>
+                        <a href="Cultural.html">Cultural</a>
+                        <a href="Talentos.html">Talentos</a>
+                        <a href="Interclasse.html">Interclasse</a>
+                        <a href="AgostoLilas.html">Agosto Lilas</a>
+                        <a href="Acolhimento.html">Acolhimento</a>
+                    </div>
+                
+                    <div id="main" class="content">
+                        <button class="openbtn" onclick="openNav()">&#9776; </button>
+                    </div>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("mySidebar").style.left = "0";
+                      document.getElementById("main").classList.add('content-open');
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mySidebar").style.left = "-250px";
+                      document.getElementById("main").classList.remove('content-open');
+                    }
+                    </script>
+                </li>
+            </ul>
+        </nav> 
+    </div>
+    <body>
+
+        <section class="cover-image">
+            <img src="img/Capa Site (4).jpg" alt="Imagem de Capa">
+        </section>
+
+    <main>
+        <article class="article">
+            <h2>A Importância da Cultura nas Escolas</h2>
+            <div class="image-container">
+                <img src="img/Cultura_09.jpeg" alt="Descrição da Imagem">
+            </div>
+            <p>Recentemente, no Colégio Estadual Santo Agostinho em Palotina, PR, foi realizada uma atividade cultural que incluiu apresentações de danças tradicionais e a contação de histórias folclóricas. Este evento teve como objetivo promover a valorização da cultura local e incentivar os alunos a explorarem e apreciarem suas próprias raízes culturais.</p>
+            <p>Ensinar folclore nas escolas é essencial para a preservação das tradições e histórias de uma comunidade. No evento, foram contadas lendas e mitos populares que encantaram os alunos, proporcionando uma conexão mais profunda com suas origens. As histórias folclóricas não apenas entretêm, mas também ensinam lições valiosas e reforçam a identidade cultural.</p>
+            <p>A dança foi outro destaque da atividade. Alunos e professores se reuniram para aprender e apresentar danças típicas. A dança, além de ser uma forma divertida de expressar a cultura, promove o trabalho em equipe, a coordenação motora e a autoconfiança dos alunos. Ver a alegria e o entusiasmo durante as apresentações foi inspirador.</p>
+            <p>Incorporar a cultura nas escolas é fundamental para criar um ambiente inclusivo e diversificado. Eventos como este no Colégio Estadual Santo Agostinho demonstram como a integração da cultura pode enriquecer o currículo escolar e contribuir para o desenvolvimento integral dos alunos. Além de aprender sobre suas próprias culturas, os alunos também ganham respeito e apreciação pela diversidade cultural.</p>
+        </article>
+        
+        
+        
+
+        <section class="comments">
+            <h2>Comentários</h2>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <textarea id="comment" placeholder="Deixe seu comentário..."></textarea>
+            <button id="submit-comment">Enviar</button>
+            <div id="comment-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FEIRA DE CIÊNCIAS - CESA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

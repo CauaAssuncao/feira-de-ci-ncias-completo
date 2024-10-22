@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Talentos.css">
+        <title>Talentos</title>
+    </head>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Página Inicial</a>
+                    <a href="Páscoa.html">Páscoa</a>
+                    <a href="Cultural.html">Cultural</a>
+                    <a href="Talentos.html">Talentos</a>
+                    <a href="Interclasse.html">Interclasse</a>
+                    <a href="AgostoLilas.html">Agosto Lilas</a>
+                    <a href="Acolhimento.html">Acolhimento</a>
+                </div>
+                
+                    <div id="main" class="content">
+                        <button class="openbtn" onclick="openNav()">&#9776; </button>
+                    </div>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("mySidebar").style.left = "0";
+                      document.getElementById("main").classList.add('content-open');
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mySidebar").style.left = "-250px";
+                      document.getElementById("main").classList.remove('content-open');
+                    }
+                    </script>
+                </li>
+            </ul>
+        </nav> 
+    </div>
+    <body>
+
+        <section class="cover-image">
+            <img src="img/capa 3.jpg" alt="Imagem de Capa">
+        </section>
+
+    <main>
+        <article class="article">
+            <h2>A Importância dos Shows de Talentos nas Escolas</h2>
+            <div class="image-container">
+                <img src="img/Show_Talentos_01.jpeg" alt="Descrição da Imagem">
+            </div>
+            <p>Recentemente, no Colégio Estadual Santo Agostinho em Palotina, PR, foi realizado um show de talentos que contou com diversas apresentações de alunos, incluindo música, dança, teatro e performances artísticas variadas. Este evento teve como objetivo promover a autoestima dos alunos, incentivar a criatividade e fortalecer o senso de comunidade dentro da escola.</p>
+            <p>Os shows de talentos nas escolas desempenham um papel crucial no desenvolvimento pessoal dos alunos. Ao se apresentarem diante de seus colegas e professores, os alunos têm a oportunidade de superar medos e inseguranças, desenvolvendo habilidades importantes como a autoconfiança e a capacidade de falar em público. Essas experiências são valiosas não apenas para o crescimento individual, mas também para a formação de futuros líderes.</p>
+            <p>Além do desenvolvimento pessoal, os shows de talentos incentivam a criatividade e a expressão artística. Ao explorar diferentes formas de arte, os alunos podem descobrir novos interesses e talentos, ampliando seus horizontes e abrindo portas para futuras oportunidades. A prática artística também contribui para o bem-estar emocional, oferecendo uma válvula de escape saudável para o estresse e as pressões do dia a dia.</p>
+            <p>O senso de comunidade é outro aspecto fundamental dos shows de talentos. Ao participar e apoiar as apresentações de seus colegas, os alunos desenvolvem um sentimento de pertencimento e camaradagem. Este ambiente colaborativo promove o respeito mútuo e a valorização das diferenças, criando uma atmosfera escolar mais inclusiva e acolhedora.</p>
+            <p>Iniciativas como o show de talentos no Colégio Estadual Santo Agostinho são essenciais para uma educação integral, que vai além do currículo acadêmico tradicional. Ao proporcionar um espaço onde os alunos podem expressar-se livremente e explorar suas habilidades, a escola contribui para a formação de indivíduos mais completos e preparados para os desafios do futuro. A valorização das artes e da expressão pessoal é um componente vital para a construção de uma sociedade mais justa e criativa.</p>
+        </article>
+        
+
+        <section class="comments">
+            <h2>Comentários</h2>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <textarea id="comment" placeholder="Deixe seu comentário..."></textarea>
+            <button id="submit-comment">Enviar</button>
+            <div id="comment-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FEIRA DE CIÊNCIAS - CESA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FEIRA DE CIÊNCIAS - CESA</title>
+</head>
+
+<div class="container">
+    <nav>
+        <ul>
+            <li>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Página Inicial</a>
+                    <a href="Páscoa.html">Páscoa</a>
+                    <a href="Cultural.html">Cultural</a>
+                    <a href="Talentos.html">Talentos</a>
+                    <a href="Interclasse.html">Interclasse</a>
+                    <a href="AgostoLilas.html">Agosto Lilas</a>
+                    <a href="Acolhimento.html">Acolhimento</a>
+                </div>
+            
+                <div id="main" class="content">
+                    <button class="openbtn" onclick="openNav()">&#9776; </button>
+                </div>
+                
+                <script>
+                function openNav() {
+                  document.getElementById("mySidebar").style.left = "0";
+                  document.getElementById("main").classList.add('content-open');
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidebar").style.left = "-250px";
+                  document.getElementById("main").classList.remove('content-open');
+                }
+                </script>
+            </li>
+        </ul>
+    </nav> 
+</div>
+<body>
+
+    <section class="cover-image">
+        <img src="img/Capa Site (1).jpg" alt="Imagem de Capa">
+    </section>
+
+    <main>
+        <section class="search">
+            <h2>Pesquisar Postagens</h2>
+            <input type="text" id="search-input" placeholder="Pesquise...">
+            <button id="search-button">Buscar</button>
+        </section>
+
+        <section class="buttons">
+            <div class="carousel">
+                <div class="button-container">
+                    <a href="AgostoLilas.html" class="rectangle" style="background-image: url('img/botao.jpg');"></a>
+                    <a href="Acolhimento.html" class="rectangle" style="background-image: url('img/botao 1.jpg');"></a>
+                    <a href="Cultural.html" class="rectangle" style="background-image: url('img/botao 2.jpg');"></a>
+                    <a href="Interclasse.html" class="rectangle" style="background-image: url('img/botao 3.jpg');"></a>
+                    <a href="Páscoa.html" class="rectangle" style="background-image: url('img/botao 4.jpg');"></a>
+                    <a href="Talentos.html" class="rectangle" style="background-image: url('img/botao\ T.jpg');"></a>
+                </div>
+            </div>
+            <div class="indicator-container">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </section>
+    
+        <section class="comments">
+            <h2>Comentários</h2>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <textarea id="comment" placeholder="Deixe seu comentário..."></textarea>
+            <button id="submit-comment">Enviar</button>
+            <div id="comment-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

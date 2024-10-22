@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Páscoa.css">
+        <title>Interclasse</title>
+    </head>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Página Inicial</a>
+                        <a href="Páscoa.html">Páscoa</a>
+                        <a href="Cultural.html">Cultural</a>
+                        <a href="Talentos.html">Talentos</a>
+                        <a href="Interclasse.html">Interclasse</a>
+                        <a href="AgostoLilas.html">Agosto Lilas</a>
+                        <a href="Acolhimento.html">Acolhimento</a>
+                    </div>
+                
+                    <div id="main" class="content">
+                        <button class="openbtn" onclick="openNav()">&#9776; </button>
+                    </div>
+                    
+                    <script>
+                    function openNav() {
+                      document.getElementById("mySidebar").style.left = "0";
+                      document.getElementById("main").classList.add('content-open');
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mySidebar").style.left = "-250px";
+                      document.getElementById("main").classList.remove('content-open');
+                    }
+                    </script>
+                </li>
+            </ul>
+        </nav> 
+    </div>
+    <body>
+
+        <section class="cover-image">
+            <img src="img/Capa Site (6).jpg" alt="Imagem de Capa">
+        </section>
+
+    <main>
+        <article class="article">
+            <h2>A Importância dos Interclasses nas Escolas</h2>
+            <div class="image-container">
+                <img src="img/Interclasse_00.jpeg" alt="Descrição da Imagem">
+            </div>
+            <p>Recentemente, no Colégio Estadual Santo Agostinho em Palotina, PR, foi realizado um torneio interclasse que envolveu alunos de diferentes turmas em diversas modalidades esportivas. Este evento teve como objetivo promover a integração entre os estudantes, incentivando a prática esportiva e o espírito de equipe.</p>
+            <p>Os torneios interclasse são fundamentais para desenvolver habilidades sociais e motoras. Ao participar de competições esportivas, os alunos aprendem a trabalhar em equipe, a respeitar regras e a lidar com vitórias e derrotas de forma saudável. Essas experiências contribuem para o desenvolvimento de uma atitude positiva e resiliente, tanto dentro quanto fora do ambiente escolar.</p>
+            <p>Além disso, os interclasses oferecem uma oportunidade única para os alunos fortalecerem os laços de amizade e construírem novas conexões. A interação entre diferentes turmas promove um ambiente escolar mais coeso e harmonioso, onde todos se sentem parte de uma comunidade maior. Isso é particularmente importante em um mundo onde a socialização presencial está cada vez mais rara.</p>
+            <p>Os benefícios dos interclasses vão além das quadras. A prática regular de atividades físicas é essencial para a saúde e o bem-estar dos estudantes. Ela ajuda a melhorar a concentração, o desempenho acadêmico e a saúde mental dos alunos. Eventos esportivos como esses incentivam um estilo de vida ativo e saudável, que pode ser mantido ao longo da vida.</p>
+            <p>Iniciativas como o torneio interclasse no Colégio Estadual Santo Agostinho são exemplos brilhantes de como a integração de atividades esportivas no currículo escolar pode enriquecer a experiência educacional. Promover o esporte na escola é uma maneira eficaz de formar cidadãos mais saudáveis, felizes e integrados na sociedade.</p>
+        </article>
+        
+
+        <section class="comments">
+            <h2>Comentários</h2>
+            <input type="text" id="name" placeholder="Seu Nome">
+            <textarea id="comment" placeholder="Deixe seu comentário..."></textarea>
+            <button id="submit-comment">Enviar</button>
+            <div id="comment-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FEIRA DE CIÊNCIAS - CESA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
